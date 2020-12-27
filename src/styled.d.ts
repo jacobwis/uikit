@@ -26,6 +26,18 @@ type SpacingUnit =
   | 'xxl'
   | 'xxxl';
 
+type FontSize =
+  | 'xs'
+  | 'sm'
+  | 'base'
+  | 'lg'
+  | 'xl'
+  | '2xl'
+  | '3xl'
+  | '4xl'
+  | '5xl'
+  | '6xl';
+
 declare module 'styled-components' {
   export interface DefaultTheme {
     colors: {
@@ -36,6 +48,22 @@ declare module 'styled-components' {
     };
     spacing: {
       [K in SpacingUnit]: string;
+    };
+    typography: {
+      size: {
+        [K in FontSize]: string;
+      };
+      leading: {
+        none: string;
+        tight: string;
+        normal: string;
+        loose: string;
+      };
+      weight: {
+        normal: number;
+        bold: number;
+        extrabold: number;
+      };
     };
   }
 }

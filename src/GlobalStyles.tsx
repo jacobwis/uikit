@@ -427,11 +427,12 @@ object {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-img,
-video {
-  max-width: 100%;
-  height: auto;
-}
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
   html {
     box-sizing: border-box;
   }
@@ -441,6 +442,7 @@ video {
   }
 
   body {
+    line-height: ${({ theme }) => theme.typography.leading.normal};
     font-family: 'Inter', sans-serif;
   }
 `;
