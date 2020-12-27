@@ -65,5 +65,14 @@ declare module 'styled-components' {
         extrabold: number;
       };
     };
+    shadow: {
+      none: string;
+      sm: string;
+      base: string;
+      md: string;
+      lg: string;
+      xl: string;
+      '2xl': string;
+    };
   }
 }
