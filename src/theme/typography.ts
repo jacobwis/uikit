@@ -1,4 +1,18 @@
-export const size = {
+import { CSSProperties } from 'styled-components';
+
+export type FontSize =
+  | 'xs'
+  | 'sm'
+  | 'base'
+  | 'lg'
+  | 'xl'
+  | '2xl'
+  | '3xl'
+  | '4xl'
+  | '5xl'
+  | '6xl';
+
+export const size: Record<FontSize, CSSProperties['fontSize']> = {
   xs: '0.75rem',
   sm: '0.875rem',
   base: '1rem',
@@ -11,14 +25,18 @@ export const size = {
   '6xl': '3.75rem',
 };
 
-export const leading = {
+export type Leading = 'none' | 'tight' | 'normal' | 'loose';
+
+export const leading: Record<Leading, CSSProperties['lineHeight']> = {
   none: '1',
   tight: '1.25',
   normal: '1.5',
   loose: '2',
 };
 
-export const weight = {
+export type FontWeight = 'normal' | 'bold' | 'extrabold';
+
+export const weight: Record<FontWeight, CSSProperties['fontWeight']> = {
   normal: 400,
   bold: 600,
   extrabold: 800,

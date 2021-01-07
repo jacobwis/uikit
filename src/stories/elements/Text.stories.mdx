@@ -1,0 +1,290 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import Text, { TextProps } from '../../elements/Text';
+
+<Meta title="Elements/Text" component={Text} />
+
+export const Template = (args) => <Text {...args} />;
+
+# Text
+
+`TODO:` Write Documentation
+
+<Canvas>
+  <Story
+    name="Interactive"
+    args={{
+      children: 'Test test',
+      size: 'base',
+      leading: 'normal',
+      weight: 'normal',
+    }}
+    argTypes={{
+      leading: {
+        name: 'leading',
+        description: 'Controls the line-height of the text element.',
+        control: {
+          type: 'select',
+          options: ['none', 'tight', 'normal', 'loose'],
+        },
+        table: {
+          type: {
+            summary: '"none" | "tight" | "normal" | "loose"',
+          },
+          defaultValue: {
+            summary: 'normal',
+          },
+        },
+      },
+      size: {
+        name: 'size',
+        description: 'Controls the size of the text element.',
+        control: {
+          type: 'select',
+          options: [
+            'xs',
+            'sm',
+            'base',
+            'lg',
+            'xl',
+            '2xl',
+            '3xl',
+            '4xl',
+            '5xl',
+            '6xl',
+          ],
+        },
+        table: {
+          type: {
+            summary:
+              '"xs" | "sm" | "base" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "6xl"',
+          },
+          defaultValue: { summary: 'base' },
+        },
+      },
+      weight: {
+        name: 'weight',
+        description: 'Controls the font-weight of the text element.',
+        control: {
+          type: 'select',
+          options: ['normal', 'bold', 'extrabold'],
+        },
+        table: {
+          type: {
+            summary: '"normal" | "bold" | "extrabold"',
+          },
+          defaultValue: {
+            summary: 'normal',
+          },
+        },
+      },
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Interactive" />
+
+## **Size**
+
+Use the `size` prop to set the size of the text element.
+
+**Possible values:** `xs`, `sm`, `base`, `lg`, `xl`, `2xl`, `3xl`, `4xl`, `5xl`, `6xl`.
+
+<Canvas>
+  <Story
+    name="Size - XS"
+    args={{
+      as: 'p',
+      children: `xs - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga suscipit architecto et est autem excepturi possimus rem quibusdam itaque consectetur, minima ex quidem nisi alias quis dicta, laboriosam corporis recusandae.`,
+      size: 'xs',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Size - SM"
+    args={{
+      as: 'p',
+      children: `sm - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga suscipit architecto et est autem excepturi possimus rem quibusdam itaque consectetur, minima ex quidem nisi alias quis dicta, laboriosam corporis recusandae.`,
+      size: 'sm',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Size - Base"
+    args={{
+      as: 'p',
+      children: `base - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga suscipit architecto et est autem excepturi possimus rem quibusdam itaque consectetur, minima ex quidem nisi alias quis dicta, laboriosam corporis recusandae.`,
+      size: 'base',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Size - LG"
+    args={{
+      as: 'p',
+      children: `lg - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga suscipit architecto et est autem excepturi possimus rem quibusdam itaque consectetur, minima ex quidem nisi alias quis dicta, laboriosam corporis recusandae.`,
+      size: 'lg',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Size - XL"
+    args={{
+      as: 'p',
+      children: `xl - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga suscipit architecto et est autem excepturi possimus rem quibusdam itaque consectetur, minima ex quidem nisi alias quis dicta, laboriosam corporis recusandae.`,
+      size: 'xl',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Size - 2XL"
+    args={{
+      as: 'p',
+      children: `2xl - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga suscipit architecto et est autem excepturi possimus rem quibusdam itaque consectetur, minima ex quidem nisi alias quis dicta, laboriosam corporis recusandae.`,
+      size: '2xl',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Size - 3XL"
+    args={{
+      as: 'p',
+      children: `3xl - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga suscipit architecto et est autem excepturi possimus rem quibusdam itaque consectetur, minima ex quidem nisi alias quis dicta, laboriosam corporis recusandae.`,
+      size: '3xl',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Size - 4XL"
+    args={{
+      as: 'p',
+      children: `4xl - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga suscipit architecto et est autem excepturi possimus rem quibusdam itaque consectetur, minima ex quidem nisi alias quis dicta, laboriosam corporis recusandae.`,
+      size: '4xl',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Size - 5XL"
+    args={{
+      as: 'p',
+      children: `5xl - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga suscipit architecto et est autem excepturi possimus rem quibusdam itaque consectetur, minima ex quidem nisi alias quis dicta, laboriosam corporis recusandae.`,
+      size: '5xl',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Size - 6XL"
+    args={{
+      as: 'p',
+      children: `6xl - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga suscipit architecto et est autem excepturi possimus rem quibusdam itaque consectetur, minima ex quidem nisi alias quis dicta, laboriosam corporis recusandae.`,
+      size: '6xl',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## **Leading**
+
+Use the `leading` prop to set the leading (line-height) of the text element.
+
+**Possible values:** `none`, `tight`, `normal`, `loose`.
+
+<Canvas>
+  <Story
+    name="Leading - None"
+    args={{
+      as: 'p',
+      children: `base - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga suscipit architecto et est autem excepturi possimus rem quibusdam itaque consectetur, minima ex quidem nisi alias quis dicta, laboriosam corporis recusandae.`,
+      size: 'base',
+      leading: 'none',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Leading - Tight"
+    args={{
+      as: 'p',
+      children: `tight - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga suscipit architecto et est autem excepturi possimus rem quibusdam itaque consectetur, minima ex quidem nisi alias quis dicta, laboriosam corporis recusandae.`,
+      size: 'base',
+      leading: 'tight',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Leading - Normal"
+    args={{
+      as: 'p',
+      children: `normal - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga suscipit architecto et est autem excepturi possimus rem quibusdam itaque consectetur, minima ex quidem nisi alias quis dicta, laboriosam corporis recusandae.`,
+      size: 'base',
+      leading: 'normal',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Leading - Loose"
+    args={{
+      as: 'p',
+      children: `loose - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga suscipit architecto et est autem excepturi possimus rem quibusdam itaque consectetur, minima ex quidem nisi alias quis dicta, laboriosam corporis recusandae.`,
+      size: 'base',
+      leading: 'loose',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## **Weight**
+
+Use the `weight` prop to set the font weight of the text element.
+
+**Possible values:** `normal`, `bold`, `extrabold`.
+
+<Canvas>
+  <Story
+    name="Weight - Normal"
+    args={{
+      as: 'p',
+      children: `normal - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga suscipit architecto et est autem excepturi possimus rem quibusdam itaque consectetur, minima ex quidem nisi alias quis dicta, laboriosam corporis recusandae.`,
+      size: 'base',
+      weight: 'normal',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Weight - Bold"
+    args={{
+      as: 'p',
+      children: `bold - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga suscipit architecto et est autem excepturi possimus rem quibusdam itaque consectetur, minima ex quidem nisi alias quis dicta, laboriosam corporis recusandae.`,
+      size: 'base',
+      weight: 'bold',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Weight - Extrabold"
+    args={{
+      as: 'p',
+      children: `extrabold - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga suscipit architecto et est autem excepturi possimus rem quibusdam itaque consectetur, minima ex quidem nisi alias quis dicta, laboriosam corporis recusandae.`,
+      size: 'base',
+      weight: 'extrabold',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

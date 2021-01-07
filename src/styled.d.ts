@@ -1,78 +1,19 @@
 import 'styled-components';
-
-interface ColorMap {
-  50: string;
-  100: string;
-  200: string;
-  300: string;
-  400: string;
-  500: string;
-  600: string;
-  700: string;
-  800: string;
-  900: string;
-}
-
-type SpacingUnit =
-  | 'none'
-  | 'px'
-  | 'xxxs'
-  | 'xxs'
-  | 'xs'
-  | 'sm'
-  | 'md'
-  | 'lg'
-  | 'xl'
-  | 'xxl'
-  | 'xxxl';
-
-type FontSize =
-  | 'xs'
-  | 'sm'
-  | 'base'
-  | 'lg'
-  | 'xl'
-  | '2xl'
-  | '3xl'
-  | '4xl'
-  | '5xl'
-  | '6xl';
+import { CSSProperties, CSSProperties } from 'styled-components';
+import { ColorMap, Colors } from './theme/colors';
+import { SpacingUnit } from './theme/spacing';
+import { FontSize, Leading, FontWeight } from './theme/typography';
+import { Shadow } from './theme/shadow';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
-    colors: {
-      primary: ColorMap;
-      gray: ColorMap;
-      red: ColorMap;
-      green: ColorMap;
-    };
-    spacing: {
-      [K in SpacingUnit]: string;
-    };
+    colors: Record<Colors, ColorMap>;
+    spacing: Record<SpacingUnit, CSSProperties['padding']>;
     typography: {
-      size: {
-        [K in FontSize]: string;
-      };
-      leading: {
-        none: string;
-        tight: string;
-        normal: string;
-        loose: string;
-      };
-      weight: {
-        normal: number;
-        bold: number;
-        extrabold: number;
-      };
+      size: Record<FontSize, CSSProperties['fontSize']>;
+      leading: Record<Leading, CSSProperties['lineHeight']>;
+      weight: Record<FontWeight, CSSProperties['fontWeight']>;
     };
-    shadow: {
-      none: string;
-      sm: string;
-      base: string;
-      md: string;
-      lg: string;
-      xl: string;
-      '2xl': string;
-    };
+    shadow: Record<Shadow, CSSProperties['boxShadow']>;
   }
 }

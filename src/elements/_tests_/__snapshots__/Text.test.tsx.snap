@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text /> should match the snapshot when "props.leading" equals "loose" 1`] = `
+.c0 {
+  color: #111827;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2;
+}
+
+<span
+  class="c0"
+>
+  This is the text for the Text component.
+</span>
+`;
+
+exports[`<Text /> should match the snapshot when "props.leading" equals "none" 1`] = `
+.c0 {
+  color: #111827;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+<span
+  class="c0"
+>
+  This is the text for the Text component.
+</span>
+`;
+
+exports[`<Text /> should match the snapshot when "props.leading" equals "normal" 1`] = `
+.c0 {
+  color: #111827;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+<span
+  class="c0"
+>
+  This is the text for the Text component.
+</span>
+`;
+
+exports[`<Text /> should match the snapshot when "props.leading" equals "tight" 1`] = `
+.c0 {
+  color: #111827;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+<span
+  class="c0"
+>
+  This is the text for the Text component.
+</span>
+`;
+
+exports[`<Text /> should match the snapshot when "props.size" equals "2xl" 1`] = `
+.c0 {
+  color: #111827;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+<span
+  class="c0"
+>
+  This is the text for the Text component.
+</span>
+`;
+
+exports[`<Text /> should match the snapshot when "props.size" equals "3xl" 1`] = `
+.c0 {
+  color: #111827;
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+<span
+  class="c0"
+>
+  This is the text for the Text component.
+</span>
+`;
+
+exports[`<Text /> should match the snapshot when "props.size" equals "4xl" 1`] = `
+.c0 {
+  color: #111827;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+<span
+  class="c0"
+>
+  This is the text for the Text component.
+</span>
+`;
+
+exports[`<Text /> should match the snapshot when "props.size" equals "5xl" 1`] = `
+.c0 {
+  color: #111827;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+<span
+  class="c0"
+>
+  This is the text for the Text component.
+</span>
+`;
+
+exports[`<Text /> should match the snapshot when "props.size" equals "6xl" 1`] = `
+.c0 {
+  color: #111827;
+  font-size: 3.75rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+<span
+  class="c0"
+>
+  This is the text for the Text component.
+</span>
+`;
+
+exports[`<Text /> should match the snapshot when "props.size" equals "base" 1`] = `
+.c0 {
+  color: #111827;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+<span
+  class="c0"
+>
+  This is the text for the Text component.
+</span>
+`;
+
+exports[`<Text /> should match the snapshot when "props.size" equals "lg" 1`] = `
+.c0 {
+  color: #111827;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+<span
+  class="c0"
+>
+  This is the text for the Text component.
+</span>
+`;
+
+exports[`<Text /> should match the snapshot when "props.size" equals "sm" 1`] = `
+.c0 {
+  color: #111827;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+<span
+  class="c0"
+>
+  This is the text for the Text component.
+</span>
+`;
+
+exports[`<Text /> should match the snapshot when "props.size" equals "xl" 1`] = `
+.c0 {
+  color: #111827;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+<span
+  class="c0"
+>
+  This is the text for the Text component.
+</span>
+`;
+
+exports[`<Text /> should match the snapshot when "props.size" equals "xs" 1`] = `
+.c0 {
+  color: #111827;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+<span
+  class="c0"
+>
+  This is the text for the Text component.
+</span>
+`;
+
+exports[`<Text /> should match the snapshot when "props.weight" equals "bold" 1`] = `
+.c0 {
+  color: #111827;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+<span
+  class="c0"
+>
+  This is the text for the Text component.
+</span>
+`;
+
+exports[`<Text /> should match the snapshot when "props.weight" equals "extrabold" 1`] = `
+.c0 {
+  color: #111827;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+<span
+  class="c0"
+>
+  This is the text for the Text component.
+</span>
+`;
+
+exports[`<Text /> should match the snapshot when "props.weight" equals "normal" 1`] = `
+.c0 {
+  color: #111827;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+<span
+  class="c0"
+>
+  This is the text for the Text component.
+</span>
+`;

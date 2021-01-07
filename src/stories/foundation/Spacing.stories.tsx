@@ -1,7 +1,6 @@
 import * as React from 'react';
 import styled, { DefaultTheme } from 'styled-components';
 import { Story, Meta } from '@storybook/react';
-import spacing from '../theme/spacing';
 
 interface SpaceBoxProps {
   size: keyof DefaultTheme['spacing'];

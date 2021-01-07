@@ -1,4 +1,21 @@
-const spacing = {
+import { CSSProperties } from 'styled-components';
+
+export type SpacingUnit =
+  | 'none'
+  | 'px'
+  | 'xxxs'
+  | 'xxs'
+  | 'xs'
+  | 'sm'
+  | 'md'
+  | 'lg'
+  | 'xl'
+  | 'xxl'
+  | 'xxxl';
+
+export type SpacingMap = Record<SpacingUnit, CSSProperties['padding']>;
+
+const spacing: SpacingMap = {
   none: '0rem',
   px: '0.0625rem',
   xxxs: '0.125rem',

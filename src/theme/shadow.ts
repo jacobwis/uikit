@@ -1,4 +1,8 @@
-const shadow = {
+import { CSSProperties } from 'styled-components';
+
+export type Shadow = 'none' | 'sm' | 'base' | 'md' | 'lg' | 'xl' | '2xl';
+
+const shadow: Record<Shadow, CSSProperties['boxShadow']> = {
   none: 'none',
   sm: `rgba(0, 0, 0, 0.05) 0px 1px 2px 0px`,
   base: `rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, 
